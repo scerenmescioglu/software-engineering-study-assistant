@@ -1,0 +1,35 @@
+{
+  "name": "software-engineering-study-assistant",
+  "version": "2.0.0",
+  "description": "A private offline RAG study assistant for Software Engineering",
+  "type": "module",
+  "scripts": {
+    "ingest": "node src/ingest.js",
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "express": "^4.21.0",
+    "foundry-local-sdk": "^1.2.3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leestott/local-rag.git"
+  },
+  "keywords": [
+    "rag",
+    "offline-ai",
+    "foundry-local",
+    "phi-3",
+    "software-engineering",
+    "support-agent",
+    "sqlite",
+    "tfidf"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
